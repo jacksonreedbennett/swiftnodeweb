@@ -232,6 +232,12 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script src="//code.tidio.co/lvzfxi6m8wa1iomkkfl6cbmsaduf2dko.js" async></script>
+    <script>
+        $('.owl-carousel').trigger('destroy.owl.carousel'); // Destroy Owl Carousel
+$('.owl-carousel').removeAttr('style'); // Remove inline styles
+$('.owl-carousel *').removeAttr('style'); // Remove styles from child elements
+
+    </script>
 
 
 </body>
