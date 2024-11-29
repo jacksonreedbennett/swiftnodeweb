@@ -37,11 +37,9 @@
             padding: 8px;
             border-radius: 4px;
         }
-        .owl-carousel {
-    overflow: auto !important; /* Allow scrolling */
-    touch-action: auto !important; /* Enable touch gestures */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-}
+        .owl-carousel.owl-drag .owl-item {
+      touch-action: auto !important;
+    }
     </style>
 </head>
 
@@ -232,12 +230,7 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script src="//code.tidio.co/lvzfxi6m8wa1iomkkfl6cbmsaduf2dko.js" async></script>
-    <script>
-        $('.owl-carousel').trigger('destroy.owl.carousel'); // Destroy Owl Carousel
-$('.owl-carousel').removeAttr('style'); // Remove inline styles
-$('.owl-carousel *').removeAttr('style'); // Remove styles from child elements
-
-    </script>
+    
 
 
 </body>
